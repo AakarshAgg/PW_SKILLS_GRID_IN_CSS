@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS Q7</title>
+    <style>
+        .pics {
+            border: 3px solid black;
+            border-radius: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 280px);
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .pic-1 {
+            grid-row: 1/2;
+        }
+
+        .pic-2 {
+            grid-row: 1/3;
+        }
+
+        .pic-3 {
+            grid-row: 1/2;
+        }
+
+        .pic-4 {
+            grid-row: 2/4;
+        }
+
+        .pic-5 {
+            grid-row: 3/4;
+        }
+
+        .pic-6 {
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pics">
+        <div class="pic-1">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="pic-01" />
+        </div>
+        <div class="pic-2">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" alt="image-02" />
+        </div>
+        <div class="pic-3">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" alt="pic-03" />
+        </div>
+        <div class="pic-4">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" alt="pic-04" />
+        </div>
+        <div class="pic-5">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="pic-5" />
+        </div>
+        <div class="pic-6">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" alt="pic-6" />
+        </div>
+    </div>
+</body>
+
+</html>

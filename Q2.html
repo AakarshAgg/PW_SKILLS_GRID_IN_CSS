@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS Q2</title>
+    <style>
+        body {
+            border: 2px solid black;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-rows: 60px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            padding: 10px;
+            height: 90vh;
+        }
+
+        .item1 {
+            padding: 0px 50px;
+        }
+
+        .item1>button {
+            background-color: #000;
+            color: white;
+            padding: 10px 30px;
+        }
+
+        .item2 {
+            background-color: yellow;
+            height: 90vh;
+        }
+
+        .item2>img {
+            height: 90vh;
+            width: 428px;
+        }
+
+        nav>img {
+            width: 50px;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        nav ul {
+            display: grid;
+            grid-template-columns: 90px 90px 90px;
+        }
+
+        nav ul li {
+            list-style: none;
+            align-self: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        nav button {
+            width: 180px;
+            justify-self: end;
+            align-self: center;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #0fdb6b;
+            border-style: none;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <nav>
+            <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png"
+                alt="Logo" />
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <button>Login</button>
+        </nav>
+
+
+        <section class="container">
+            <div class="item1">
+                <h1>Healthy Food</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quo enim maxime quis debitis unde!
+                    Iure
+                    odit, obcaecati quo illum nobis amet molestias molestiae tenetur vero nulla maxime quas qui ducimus
+                    libero eveniet, eius consequatur delectus, dolorem quod totam! Voluptas reiciendis voluptate
+                    corporis
+                    voluptatibus maxime praesentium omnis nisi blanditiis tempora.</p>
+                <button>Read More</button>
+            </div>
+            <div class="item2">
+                <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY="
+                    alt="Food Pic" />
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
